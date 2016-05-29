@@ -1,0 +1,12 @@
+*
+!*/
+!*.*
+
+backup
+lib
+*.lps
+*.lpi
+*.o
+*.doc#
+
+.DS_Store
