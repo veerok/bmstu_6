@@ -20,43 +20,8 @@ begin
 end;
 
 
-var
-  result, sample: double;
-  counter: integer;
-begin
-
-  // 9,073415289388
-  sample := 0.05;
-  counter := 1;
-
-  repeat
-    result := getFac(counter);
-    writeLn('Iteration ', counter, ' result ', result);
-    inc(counter);
-  until result > sample;
-
-end.
 
 
 
 
 
-// var result = 0;
-// var sample = 0.055555555;
-// 
-// function fack(iterationAmount) {
-// 	var sum = 0;
-// 	for (var i = 1; i <= iterationAmount; i++) {
-// 	  var r = 1 / (i*(i+1)*(i+2)*(i+3));
-// 	  sum += r;
-// 	}
-// 	return sum;
-// }
-// 
-// var i = 1;
-// do {
-// 	result = fack(i);
-// 	i++;
-// } while (result < sample);
-// 
-// console.log(result, i);
