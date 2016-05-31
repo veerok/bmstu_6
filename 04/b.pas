@@ -18,7 +18,20 @@ begin
   end;
   result := sum;
 end;
+var
+result, sample: double;
+counter: integer;
+begin
 
+// 9,073415289388
+ sample := 0.05;
+  counter := 1;
+repeat
+  result := getFac(counter);
+  writeLn('Iteration ', counter, ' result ', result);
+  inc(counter);
+ until result > sample; 
+end. 
 
 
 
