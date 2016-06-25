@@ -18,13 +18,6 @@ begin
   // Определяем длину массива чисел с которым будем работать.
   SetLength(list, DIMENSION);
 
-  // WTF o_O!? AHAHAHA. narcotists.
-  //
-  // If the argument is an array type or an array type variable then Low returns
-  // the lowest possible value of it's index. If the argument is an open array
-  // identifier in a function or procedure, then Low returns the lowest element
-  // of the array, which is always zero.
-
   // Наполняем массив случайными числами
   for i := 1 to high(list) do list[i] := random(100);
 
