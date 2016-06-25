@@ -26,10 +26,9 @@ begin
   // of the array, which is always zero.
 
   // Наполняем массив случайными числами
-  for i := 1 to high(list) do begin
-    list[i] := random(100);
-    writeln('Добивим число ', list[i]);
-  end;
+  for i := 1 to high(list) do list[i] := random(100);
+
+  for i := 1 to high(list) do write(list[i], ' ');
 
   writeln;
 
@@ -76,7 +75,7 @@ begin
   writeln('===== Amount of the fittable elements is ', position);
 
   for i:=1 to length(list) do begin
-    writeln(list[i]);
+    write(list[i], ' ');
   end;
 
 end.
