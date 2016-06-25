@@ -24,7 +24,7 @@ counter: integer;
 begin
 
 // 9,073415289388
- sample := 0.05;
+  sample := 0.05;
   counter := 1;
 repeat
   result := getFac(counter);
@@ -33,8 +33,4 @@ repeat
  until result > sample; 
 end. 
 
-
-
-
-
-
+end.
