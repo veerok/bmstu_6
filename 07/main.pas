@@ -2,9 +2,6 @@ program main;
 
 {$mode objfpc}{$H+}
 
-const
-  LETTER = 'a';
-
 type
   TStringArray = array of string;
 
@@ -22,7 +19,7 @@ begin
     symbol := text[i];
 
     // Если символ НЕ попал в диапазон алфавита - значит "слово" закончилось и
-    // мы можем проверить наличие подстроки `LETTER`.
+    // мы можем...
     if (symbol > #122) or (symbol < #65) then begin
 
     	// Если слово начинается с букв А,В,С, то третью букву слова заменить на Y
